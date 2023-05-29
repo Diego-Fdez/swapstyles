@@ -1,4 +1,4 @@
-import { Text, SafeAreaView, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import {
   MD3LightTheme as DefaultTheme,
   PaperProvider,
@@ -6,6 +6,7 @@ import {
 import { Stack } from 'expo-router';
 import { Navbar, HeaderLeft, HeaderRight } from '../components';
 import { colors } from '../constants';
+import { Home } from './pages';
 
 const App = () => {
   const theme = {
@@ -27,9 +28,7 @@ const App = () => {
             headerTitle: '',
           }}
         />
-        <ScrollView showsVerticalScrollIndicator={false}>
-          <Text>Home</Text>
-        </ScrollView>
+        <Home />
         <Navbar />
       </SafeAreaView>
     </PaperProvider>
