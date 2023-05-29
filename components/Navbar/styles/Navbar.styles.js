@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
-export const BOTTOM_APPBAR_HEIGHT = 80;
-export const MEDIUM_FAB_HEIGHT = 56;
+export const BOTTOM_APPBAR_HEIGHT = 60;
+export const MEDIUM_FAB_HEIGHT = 40;
 
 export const styles = StyleSheet.create({
   bottom: {

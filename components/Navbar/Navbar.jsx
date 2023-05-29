@@ -21,28 +21,28 @@ const Navbar = () => {
       <View style={styles.buttonWrapper}>
         <FAB
           mode='flat'
-          size='medium'
+          size='small'
           icon='home'
           onPress={() => {}}
           style={styles.fab}
         />
         <FAB
           mode='flat'
-          size='medium'
+          size='small'
           icon='heart-outline'
           onPress={() => {}}
           style={styles.fab}
         />
         <FAB
           mode='flat'
-          size='medium'
+          size='small'
           icon='message-text-outline'
           onPress={() => {}}
           style={styles.fab}
         />
         <FAB
           mode='flat'
-          size='medium'
+          size='small'
           icon='account-outline'
           onPress={() => {}}
           style={styles.fab}
