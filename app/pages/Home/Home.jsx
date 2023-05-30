@@ -1,12 +1,23 @@
 import { ScrollView, Text, View } from 'react-native';
+import { useTheme } from 'react-native-paper';
+import { BannerScreen, SearchScreen } from '../../../components';
+import { styles } from './styles/Home.styles';
+import { CardScreen } from './components';
 
 const Home = () => {
+  const theme = useTheme();
   return (
-    <ScrollView showsVerticalScrollIndicator={false}>
-      <View>
-        <Text style={{ fontSize: 30, color: 'red' }}>Home</Text>
-      </View>
-    </ScrollView>
+    <>
+      <BannerScreen />
+      <SearchScreen />
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Text style={[styles.title, { color: theme.colors.onSurface }]}>
+          <Text style={{ color: theme.colors.inversePrimary }}>Easy</Text> and
+          modern garment exchange
+        </Text>
+        <CardScreen />
+      </ScrollView>
+    </>
   );
 };
 
